@@ -1,6 +1,11 @@
 import threading
 import gdown
 
+## here are my google drive file links used for testing, open to anyone with link
+## https://drive.google.com/drive/folders/1C0TGU3VUWQs9bSjpMUUN57FksfDySSil?usp=sharing
+## https://drive.google.com/drive/folders/1AkmkPUHsnhMZji94kaAlZj6jnOxL-Cne?usp=sharing
+## https://drive.google.com/drive/folders/1nDKihZAa2AhEKOPMhCqGSFxne_eZq3Wj?usp=sharing
+
 def extract_folder_id(folder_url):
     """
     Extracts the folder ID from a standard Google Drive folder URL.

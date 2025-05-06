@@ -1,0 +1,53 @@
+I used a few different sources for this project. First I will go over non-AI stuff.
+
+https://pypi.org/project/gdown/
+Gdown! This is the main piece of my project. I like google, and I enjoy working with chromium stuff, so I figured
+google drive was the easiest way to get my files hosted tow download from.
+I used the documentation to look through the methods for this library, and it was interesting.
+The main thing I needed was gdown.download, and its really simple, yippee gdown!
+
+I used a lot of our previous work, mainly my parallel python stuff with threads from before as templates.
+
+
+AI STUFF:
+
+I used a decent amount of GPT prompts, most of which didn't work because its stupid.
+
+Here's the prompts and what I used:
+
+Write me a basic python file template with hello world:
+def main():
+    print("Hello, world!")
+
+
+if __name__ == "__main__":
+    main()
+(I used the whole thing)
+
+Write me an example function to download a single google drive folder from a link with gdown:
+import gdown
+
+def download_drive_folder(folder_url, output_dir="downloads"):
+    """
+    Downloads a Google Drive folder given a full folder URL.
+
+    Args:
+        folder_url (str): The full Google Drive folder URL.
+        output_dir (str): The local directory to save the folder contents.
+    """
+    if "drive.google.com" not in folder_url or "/folders/" not in folder_url:
+        raise ValueError("Invalid Google Drive folder URL.")
+
+    # Extract folder ID from the URL
+    folder_id = folder_url.split("/folders/")[1].split("?")[0]
+
+    print(f"Downloading folder to: {output_dir}")
+    gdown.download_folder(id=folder_id, output=output_dir, quiet=False, use_cookies=False)
+    print("Download complete.")
+(I used most of this but retrofitted it for my setup)
+
+MY THOUGHTS ON AI USE IN THIS PROJECT:
+I found it helpful. I didn;t have to really learn the library as much as I got chatGPT
+to write the one functionality I needed syntax for, and didn't have to look at anything else.
+I think this is a situation where AI can be a superpower. I am a good programmer, captain america strong. Not flying around
+but still pretty strong. GPT here made me fly, laser vision, superman. Very helpful, but you have to be captain america first.
