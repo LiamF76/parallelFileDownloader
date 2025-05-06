@@ -7,7 +7,11 @@ import gdown
 import time
 
 def main():
-    print("Hello, world!")
+    print("Hello, parallel files!")
+
+    ## create empty threads list for worker
+    threads = []
+    
 
 
 if __name__ == "__main__":
