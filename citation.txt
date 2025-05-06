@@ -1,3 +1,6 @@
+WHAT IS WORKING: My downloader, my threads, my gdown library, and my file outputs, everything!
+WHAT IS NOT WORKING: Nothing. I have full functionality, I guess you can't download outside google drive though.
+
 I used a few different sources for this project. First I will go over non-AI stuff.
 
 https://pypi.org/project/gdown/
