@@ -9,7 +9,6 @@ import gdown
 def extract_folder_id(folder_url):
     """
     Extracts the folder ID from a standard Google Drive folder URL.
-    No regex is used.
     """
     if "drive.google.com" not in folder_url or "/folders/" not in folder_url:
         raise ValueError("Only full Google Drive folder links are accepted.")
